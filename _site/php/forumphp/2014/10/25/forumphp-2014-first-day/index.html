@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Forum PHP 2014 - Premier jour &#8211; Mickael Euranie - Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Résumé du Forum PHP du 23 au 24 octobre 2014">
+    <meta name="author" content="Mickaël Euranie">
+    <meta name="keywords" content="php, forumphp">
+    <link rel="canonical" href="http://blog.mickaeleuranie.com/php/forumphp/2014/10/25/forumphp-2014-first-day/">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/pixyll.css" type="text/css">
+
+    <!-- Fonts -->
+    <link href='//fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Lato:900,300' rel='stylesheet' type='text/css'>
+    
+      <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    
+
+    <!-- Open Graph -->
+    <!-- From: https://github.com/mmistakes/hpstr-jekyll-theme/blob/master/_includes/head.html -->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Forum PHP 2014 - Premier jour">
+    <meta property="og:description" content="Some stuffs about web development that I like, use or am interested in.">
+    <meta property="og:url" content="http://blog.mickaeleuranie.com/php/forumphp/2014/10/25/forumphp-2014-first-day/">
+    <meta property="og:site_name" content="Mickael Euranie - Blog">
+</head>
+
+<body class="">
+  <div class="site-wrap">
+    <header class="site-header px2 px-responsive">
+  <div class="mt2 wrap">
+    <div class="measure">
+      <a href="http://blog.mickaeleuranie.com" class="site-title">Mickael Euranie - Blog</a>
+      <nav class="site-nav right">
+        <a href="/about/">About</a>
+      </nav>
+      <div class="clearfix"></div>
+      
+        <div class="social-icons">
+  <div class="left">
+    
+      <a class="fa fa-github" href="https://github.com/mickaeleuranie" target="_blank"></a>
+    
+    <a class="fa fa-rss" href="/feed.xml" target="_blank"></a>
+    
+      <a class="fa fa-twitter" href="https://twitter.com/mickaeleuranie" target="_blank"></a>
+    
+    
+    
+      <a class="fa fa-envelope" href="mailto:contact@mickaeleuranie.com" target="_blank"></a>
+    
+    
+      <a class="fa fa-linkedin" href="https://www.linkedin.com/pub/micka%C3%ABl-euranie/37/840/a8" target="_blank"></a>
+    
+  </div>
+  <div class="right">
+    
+    
+    
+  </div>
+</div>
+<div class="clearfix"></div>
+
+      
+    </div>
+  </div>
+</header>
+
+
+    <div class="post p2 p-responsive wrap" role="main">
+      <div class="measure">
+        
+
+
+<div class="post-header mb2">
+  <h1>Forum PHP 2014 - Premier jour</h1>
+  <span class="post-meta">Oct 25, 2014</span><br>
+  
+  <span class="post-meta small">18 minute read</span>
+</div>
+
+<article class="post-content">
+  <h1 id="forumphp-2014">ForumPHP 2014</h1>
+<p>Premier jour – 23/10/2014</p>
+
+<p>Introduction</p>
+
+<ol>
+  <li>Tests</li>
+  <li>Clean code</li>
+  <li>Automatisation
+    <ol>
+      <li>Exemple de Lexpress</li>
+      <li>Exemple de Diffbot</li>
+      <li>Conclusion</li>
+    </ol>
+  </li>
+  <li>API
+    <ol>
+      <li>Exemple de KlubUp</li>
+      <li>Exemple de ARTE</li>
+      <li>Exemple de Lexpress</li>
+      <li>Conclusion</li>
+    </ol>
+  </li>
+  <li>Logs
+    <ol>
+      <li>Exemple de BlaBlaCar</li>
+      <li>Exemple de KlubUp</li>
+    </ol>
+  </li>
+  <li>Applications/outils cités (et j’en oublie)</li>
+  <li>Liens utiles</li>
+</ol>
+
+<h2 id="introduction">Introduction</h2>
+<p>Le jeudi 23 octobre 2014 avait lieu le premier jour du Forum PHP 2014 se déroulant au béffroi de Montrouge. Pour plus d’informations, suivez le hashta… Pardon, mot-dièse <code>forumphp</code> sur Twitter ou suivez moi : <a href="http://twitter.com/mickaeleuranie">@mickaeleuranie</a>.
+Le thème cette année est <em>Du concept à la production : PHP premier à l’arrivée</em> avec des conférences s’orientant pour la plupart autour des sujets suivants :</p>
+
+<ul>
+  <li>Retour d’expérience sur l’utilisation de PHP à grande vitesse</li>
+  <li>Gagner du temps avec l’écosystème open source PHP</li>
+  <li>Agile et DevOps PHP</li>
+  <li>Les solutions du développeur PHP rapide</li>
+</ul>
+
+<p>Je ne vais pas vous faire un résumé conférence par conférence de cette journée riche en informations ni ne vais faire la présentation en détail des différentes applications ou différents logiciels cités (Google est là pour ça) mais plutôt tenter de vous retranscrire les idées et applications qui en sont resorties à travers les différents exemples.</p>
+
+<p>Tel un nuage de mots (ou citations) voici ceux qui, de mon point de vue, résument bien la journée :</p>
+
+<ul>
+  <li>Tests</li>
+  <li>Bugs</li>
+  <li>DevOps</li>
+  <li>API</li>
+  <li>Microservices</li>
+  <li>Automatiser</li>
+  <li>Help yourself</li>
+  <li>Un bon développeur est un développeur fainéant</li>
+  <li>AWS</li>
+  <li>Symfony</li>
+  <li>Logs</li>
+  <li>Monitoring</li>
+  <li>Throttling</li>
+</ul>
+
+<p>Pour plus de détails concernant la seconde journée, allez jeter un oeil à l’article de Julien Benoit ( <a href="http://twitter.com/_JulienBenoit">@_JulienBenoit</a> ) : <a href="http://blog.julienbenoit.net/2014/11/10/forum-php-2014.html">http://blog.julienbenoit.net/2014/11/10/forum-php-2014.html</a>.</p>
+
+<h2 id="tests">1 Tests</h2>
+
+<p>S’il est un point commun dans ces conférences, ce sont bien les tests. Que ce soit lors de la mise en place d’automatisation ou simplement pour le développement de son application, ils sont nécessaires.
+Je n’ai pas eu la chance d’aller à celle parlant spécifiquement de ça mais certaines informations utiles ont été présentées.</p>
+
+<p>Sebastian Bergmann nous a donné un aperçu de <code>PHPUnit</code> dont il est le créateur pendant sa conférence <em>A state of mind</em> dans laquelle nous avons pu voir trois différentes façon de visualiser le retour des tests via son outil. Il a également parlé de l’utilisation de générateurs de code, qui facilitent les tests: le code généré est également … Testé (dans l’exemple qu’il a donné, avec <code>Symfony</code>, qui a transformé 20 lignes de configuration <code>YAML</code> en plusieurs miliers de lignes <code>PHP</code> propres et testées).</p>
+
+<p>Des tests <code>JavaScript</code> ont été énoncés par François Dume chez ARTE. Ils n’y utilisent pas de framework de tests unitaires mais utilisent des tests fonctionnels avec <code>casper-js</code> et <code>frisby.js</code>.</p>
+
+<p>Kitchen, cité par Nicolas Silberman et Sebastian Angele, permet de faire des tests unitaires et fonctionnels sur leurs recettes. Il est compatibles avec beaucoup de provisionner dont Puppet et Chef et bootstraper (Amazon EC2).</p>
+
+<p>Les tests sont au coeur des développements car ce que l’on veut tous éviter est le bug en production.</p>
+
+<h2 id="clean-code">2 Clean code</h2>
+
+<p>Comme l’a très justement dit Sebastian Bergmann ( <a href="http://twitter.com/s_bergmann">@s_bergmann</a> ) lors de son talk “A state of mind”, il est très facile d’écrire du code compréhensible par une machine, mais c’est beaucoup plus difficile d’écrire un code compréhensible par vos collègues.</p>
+
+<p>Le développement d’applications de plus en plus complexes implique d’autres contraintes que l’automatisation. Il faut également penser à la maintenabilité de son code. Lorsqu’un bug survient, il faut pouvoir identifier rapidement sa provenance pour le corriger au plus vite. Son code doit également pouvoir être compris par ses collègues au cas où l’on ne serait pas/plus là ou sur autre chose lorsqu’il survient. Car un bug surviendra quoi qu’il arrive comme on nous l’a souvent rappelé.</p>
+
+<p>Le respect d’une norme, par exemple <code>PSR-3</code>, dans toute son application est un premier pas vers un code propre.</p>
+
+<p>Pour présenter une méthode propre d’écriture de code, Sebastian a utilisé l’exemple d’une porte, qui peut avoir 3 état et à laquelle on ne peut faire que certaines actions en fonction de son état :</p>
+
+<ul>
+  <li>Opened
+    <ul>
+      <li>peut être fermée</li>
+      <li>ne peut pas être ouverte</li>
+      <li>ne peut pas être fermée à clé</li>
+      <li>ne peut pas être unlock</li>
+    </ul>
+  </li>
+  <li>Closed
+    <ul>
+      <li>ne peut pas être fermée</li>
+      <li>peut être ouverte</li>
+      <li>peut être fermée à clé</li>
+      <li>ne peut pas être unlock</li>
+    </ul>
+  </li>
+  <li>Locked
+    <ul>
+      <li>ne peut pas être fermée</li>
+      <li>ne peut pas être ouverte</li>
+      <li>ne peut pas être fermée à clé</li>
+      <li>peut être unlock</li>
+    </ul>
+  </li>
+</ul>
+
+<p>L’utilisation d’une interface, d’une classe abstraite et d’exceptions permettent de rapidement identifier les erreurs d’utilisation à l’aide des exceptions. Je n’entre pas dans les détails, le code est dans ses slides (voir les liens plus bas).</p>
+
+<p>Une bonne maintenance passe également par une bonne représentation et documentation qui peuvent permettre de connaître l’utilisation et les liens entre différentes fonctions.</p>
+
+<p>Représentations :</p>
+
+<ul>
+  <li>XML</li>
+  <li>Schémas</li>
+  <li>Code</li>
+  <li>Liste (cf juste au dessus)</li>
+  <li>PHPUnit result</li>
+  <li>…</li>
+</ul>
+
+<p>Visualisation (Pour documentation) : <code>Graphthis</code></p>
+
+<p>La gestion des erreurs et leur localisation est grandement aidée par les logs.</p>
+
+<h2 id="automatisation">3 Automatisation</h2>
+
+<p>L’automatisation du déploiement, des tests, de la création des différents environnements, de la récupération/du tris des logs (cf partie 1.4 Logs) est également un des mots d’ordre de cette journée. Le but est de gagner du temps, que le développeur passe plus de temps à … Développer qu’à construire ses environnements de dev.
+L’exemple donné lors du talk <em>Industrialisation des environnements de dev avec <code>Puppet</code> et Amazon</em> permet de s’en rendre compte.</p>
+
+<h3 id="exemple-de-lexpress">3.1 Exemple de Lexpress</h3>
+
+<p>Le retour d’expérience de Nicolas Silberman ( <a href="http://twitter.com/nsilberman">@nsilberman</a> ) et Sebastien Angele ( <a href="http://twitter.com/sangele">@sangele</a> ) est un exemple parmi d’autre de la nécessité, au bout d’un moment dans la vie d’une application, de mettre en place des automatisations.</p>
+
+<p>Les chiffres qu’ils ont donné parlent d’eux-mêmes :</p>
+
+<ul>
+  <li>2005
+    <ul>
+      <li>1 application</li>
+      <li>1 base de donnée</li>
+      <li>1 serveur</li>
+    </ul>
+  </li>
+  <li>2014
+    <ul>
+      <li>6 applications <code>PHP</code></li>
+      <li>15 bdds métier sous <code>MySql</code>, <code>MongoDb</code> et <code>SqlServer</code></li>
+      <li><code>Redis</code></li>
+      <li><code>RabbitMQ</code></li>
+    </ul>
+  </li>
+</ul>
+
+<p>Ce qu’ils ont essayé et qui n’a pas fonctionné :</p>
+
+<ul>
+  <li>Reproduire un bout de l’environnement : trop de dépendances</li>
+  <li>Le faire à la main : long et toujours quelque chose qui manque</li>
+  <li>Espérer que ça fonctionne en prod</li>
+</ul>
+
+<p>Leur objectif étant de reconstruire la prod entière pour avoir le même environnement pour pratiquer leurs tests, ils sont passés par plusieurs étapes.</p>
+
+<ul>
+  <li>Gestion du middleware
+    <ul>
+      <li>Applicatifs</li>
+      <li>Bdds</li>
+      <li>Fichiers (images, pdf, …)</li>
+    </ul>
+  </li>
+  <li>Industrialisation du code : <code>Git</code></li>
+  <li>Expérience du déploiement en continue : <code>Capistrano</code></li>
+  <li>Compétences en <code>DevOps</code></li>
+</ul>
+
+<p>Pour la configuration, leur choix s’est d’abord porté sur <code>Puppet</code> (<code>Ruby</code>), puis <code>Chef</code> (<code>Erlang</code>).</p>
+
+<p><strong>Pourquoi avoir choisi <code>Puppet</code> ?</strong></p>
+
+<ul>
+  <li>Précédentes expériences sur des stacks plus petites dans l’équipe</li>
+  <li>Expérience significative de Nicolas Siberman chez Mediapart sur les problématiques d’environnement de dev</li>
+  <li>Volonté de rapidement démarrer le projet</li>
+</ul>
+
+<p><strong>Retour d’expérience sur Puppet :</strong></p>
+
+<ul>
+  <li>Pour démarrer, utiliser Foreman directement</li>
+  <li>Attention : configuration de type hiérarchie (fichiers <code>YAML</code>, …) non compatibles avec Foreman</li>
+  <li>Complexité de l’arbre des dépendances</li>
+  <li>Il n’est pas rare de se poser la question “Cette action doit-elle être réalisée avant celle là ?”</li>
+  <li>Exemple de dépendances :
+    <ul>
+      <li>install_apache</li>
+      <li>Créer un <code>Vhost</code></li>
+      <li>restart_apache</li>
+      <li><code>Puppet</code> compile l’ensemble des recettes, réalise un arbre de dépendance et joue les modifications à faire sur le système dans l’ordre choisi</li>
+      <li>A partir d’une 20 aine de niveau de dépendance, ça devient compliqué</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>Pourquoi être passé à Chef ?</strong></p>
+
+<ul>
+  <li>Tutoriaux de la communauté et documentation fournie par <code>AWS</code> faisant uniquement mention de Chef (même si <code>Puppet</code> arrive doucement sur <code>AWS</code>)</li>
+  <li>Choix de Chef par l’hébergeur de la prod</li>
+  <li>Recettes plus simples à écrire</li>
+</ul>
+
+<p><strong>Recettes middleware :</strong></p>
+
+<ul>
+  <li>Au début: images de base (AMI) des distributions linux</li>
+  <li>Maintenance à l’aide de <code>Packer.io</code> pour construire des images avec :
+    <ul>
+      <li><code>nginx</code> compilé (gestion des ssi)</li>
+      <li>autres briques : <code>MySql</code>, <code>Redis</code>, <code>MemCache</code>, <code>RabbitMQ</code>, <code>Apache</code>, <code>PHP</code></li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>Recettes applicatives :</strong></p>
+
+<ul>
+  <li>Tableau de variable pour :
+    <ul>
+      <li>Créer des Vhost nginx</li>
+      <li>Cloner le projet</li>
+      <li>Exécuter <code>composer install</code></li>
+      <li>….</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>Gestion des bdds :</strong></p>
+
+<ul>
+  <li>A remonter de la prod tous les jours :
+    <ul>
+      <li>10 bases de données <code>MySql</code></li>
+      <li>5 bases <code>MongoDb</code></li>
+      <li>1 dump Redis</li>
+      <li>1 base Sql Server</li>
+    </ul>
+  </li>
+  <li>30h pour tout remonter, ce qui pose problème ! Solutions proposées :
+      * Arbitrer la fraicheur des données (quelles sont les données qu’il faut absolument récupérer ?)
+      * Optimiser les bases de données (split entre les données dynamiques et les données statiques)</li>
+</ul>
+
+<p><strong>Gestion des fichiers :</strong></p>
+
+<ul>
+  <li>Pas de solutions trouvées pour le moment</li>
+  <li><code>Rsync</code></li>
+</ul>
+
+<p><strong>Kitchen :</strong></p>
+
+<ul>
+  <li>Permet de faire des tests unitaires et fonctionnels sur les recettes</li>
+  <li>Compatible avec beaucoup de provisionner (<code>Puppet</code>, <code>Chef</code>), bootstraper (Amazon EC2)</li>
+  <li>Concept de l’<em>infrastructure as code</em></li>
+</ul>
+
+<p><strong>Pilotage :</strong></p>
+
+<ul>
+  <li>Faire le moins de choses à la main</li>
+  <li>Gérer son parc</li>
+  <li>Ne pas être <code>DevOps</code> dépendant</li>
+</ul>
+
+<p>Une des remarques les plus importantes qui est ressortie des questions est que les développeurs ne peuvent pas, dans cet exemple, développer sur leur machine en local. Il leur faut toutes les données à disposition pour ne pas avoir de bug. Ils travaillent sur des instances.</p>
+
+<h2 id="exemple-de-diffbot">3.2 Exemple de Diffbot</h2>
+
+<p>Un autre exemple d’automatisation a été donné lors de la conférence <em>Automate your Workflow</em> par Bruno Skvorc ( <a href="http://twitter.com/bitfall">@bitfall</a> ) avec la présentation de <code>Diffbot</code>, un robot permettant l’extraction de données de pages web et qui apprend de ses erreurs. A partir de ces données, libre à chacun d’en faire ce dont il a besoin.
+Après une obligatoire configuration, le robot s’occupe de récupérer les informations voulues sur un site donné, de les afficher et beaucoup plus encore. Je vous encourage à aller voir le site <a href="https://www.diffbot.com/">https://www.diffbot.com/</a> qui présente le produit.
+Le mot d’ordre de cette conférence était <em>Help yourself</em>, s’aider de systèmes automatisés pour se simplifier la vie.</p>
+
+<h3 id="conclusion">3.3 Conclusion</h3>
+
+<p>L’investissement pour la mise en place d’un système automatisé est lourd au début mais fini toujours par être payant. Il est conseillé de se mettre en mode projet avec une équipe dédié, de travailler en agile et lean et surtout de finir à 100% son projet (et non pas en commencer plusieurs qu’on ne fini jamais).</p>
+
+<h2 id="api">4. API</h2>
+
+<p>L’utilisation d’<code>APIs</code> / <code>microservices</code> a été particulièrement cité aujourd’hui, avec des exemples chez Arte, KlubUp et Lexpress.
+Pourquoi choisir de mettre en place des <code>microservices</code> et quels sont les points à prendre en compte lors de leur mise en place / leur utilisation ? Cette réponse a bien été apportée par la conférence <em>Architecture d’une application full API orienté <code>microservice</code></em> à travers l’exemple du site KlubUp.</p>
+
+<h3 id="exemple-de-klubup">4.1 Exemple de KlubUp</h3>
+
+<p>D’après Xavier Gorse ( <a href="http://twitter.com/xgorse">@xgorse</a> ) et Yves Heitz qui présentaient ce talk, l’avènement du mobile les a incité à passer d’une application monolithique composée de 60 bundle à une application basée sur des microservice. L’utilisation de microservices permet de rendre son application compatible avec n’importe quelle plateforme.
+Concernant le choix de la technologie il ont pris en compte plusieurs critères :</p>
+
+<ul>
+  <li>Les compétences</li>
+  <li>La productivité</li>
+  <li>La performance</li>
+  <li>L’évolution de la technologie</li>
+</ul>
+
+<p>Ils ont également tenu compte d’autres facteurs.</p>
+
+<p><strong>La communication :</strong></p>
+
+<ul>
+  <li>HTTP (universel)</li>
+  <li>API REST JSON (universel, simple)</li>
+  <li>Consommation directe et encapsulée via un service</li>
+</ul>
+
+<p><strong>La gestion des erreurs</strong></p>
+
+<ul>
+  <li>Accepter l’idée qu’à un moment donné il va y avoir des erreurs (par exemple avec HTTP : dns, https, connexion, …)</li>
+  <li>La criticité : erreur impactante ? Peut-elle être ignorée ?</li>
+  <li>Front : ne pas bloquer l’application s’il y a des briques qui buggent</li>
+  <li>Back : un peu pareil, sauf qu’il ne faut pas de timeout. Si une erreur survient ils la catchent, puis essayent de la répéter un peu plus tard</li>
+</ul>
+
+<p><strong>La sécurité</strong></p>
+
+<ul>
+  <li><code>oAuth 2</code></li>
+  <li><code>Hawk</code></li>
+  <li>Réseaux privés</li>
+  <li><code>HTTPS</code> : penser à le mettre tout de suite, pour le front et le back, pour éviter les problèmes lors d’une mise en place tardive</li>
+</ul>
+
+<p><strong>Le transactionnel</strong></p>
+
+<ul>
+  <li>Pas de gestion de transaction cross services, uniquement au sein d’un service</li>
+  <li>Accepter l’erreur pour éviter les transactions</li>
+  <li>Le monitoring/reporting</li>
+  <li>Uniquement basé sur les logs avec Logentries</li>
+  <li><code>RequestId</code> pour regrouper les logs</li>
+  <li><code>UserAgent</code> des applications et des services</li>
+</ul>
+
+<p><strong>La scalabilité</strong></p>
+
+<ul>
+  <li>Isolation des services</li>
+  <li>Séparation des API en lecture/écriture</li>
+  <li>Concurrency des <code>workers</code></li>
+  <li>Scalabilité humaine : 1 team / 1 service</li>
+</ul>
+
+<p><strong>La performance</strong></p>
+
+<ul>
+  <li>Rendre la main le plus vite possible au client qui a fait la requête (au front)</li>
+  <li>Limiter les rebonds entre les services</li>
+  <li>Prendre en compte la latence <code>HTTP</code></li>
+  <li>Faire des traitements en asynchrone</li>
+</ul>
+
+<p><strong>Traitements asynchrones</strong></p>
+
+<ul>
+  <li><code>Iron.io</code> SAAS : <code>IronMQ</code> &amp; <code>IronWorker</code></li>
+  <li>Callback <code>HTTP</code></li>
+</ul>
+
+<p><strong>Le cache</strong></p>
+
+<p>Dans leur cas, ils ont fait le choix de ne pas utiliser de cache au niveau application et de séparer la partie publique de la partie privée :
+* public (/public/<em>) : cache HTTP via Varnish
+* private (/private/</em>) : pas de cache pour le moment</p>
+
+<p><strong>Infrastructure</strong></p>
+
+<ul>
+  <li>Provisionning avec Chef <code>OpsCode</code></li>
+  <li>VM via <code>OpenVz</code></li>
+  <li>Automatisée : obligatoire pour ce type d’architecture</li>
+</ul>
+
+<p><strong>Evolutions à venir</strong></p>
+
+<ul>
+  <li>Mise en place de Docker</li>
+  <li>Choix en fonction des résultats suite à de fortes charges</li>
+</ul>
+
+<h3 id="exemple-de-arte">4.2 Exemple de ARTE</h3>
+
+<p>Le retour d’expérience de François Dume ( <a href="http://twitter.com/_franek_">@<em>franek</em></a> ) chez ARTE était très instructif. L’objectif de l’utilisation d’API pour ARTE est différente de KlubUp :</p>
+
+<ul>
+  <li>Mettre à disposition tout le contenu d’ARTE (aller vers de l’Open data ? La question est posée)</li>
+  <li>Avoir un suivi de l’usage (throttling) : autoriser par exemple un simple utilisateur à faire 1000 requêtes/heure mais un partenaire avec un contrat premium pourrait en faire plus</li>
+</ul>
+
+<p>Pour comparer avec KlubUp, voici quelques informations sur leur utilisation de <code>microservices</code>.</p>
+
+<p><strong>Architecture technique</strong></p>
+
+<ul>
+  <li><code>Symfony 2</code> / <code>MongoDB</code></li>
+  <li><code>RabbitMQ</code> : Synchronisation des données via des messages asynchrones</li>
+  <li>Utilisation du standard <code>{json:api}</code></li>
+  <li>Découplage en composants autonomes (authentification, open program <code>API</code> (OPA), générateur de player ARTE (iframe/oEmbed), statistiques</li>
+</ul>
+
+<p><strong>Sécurisation des API et throttling</strong></p>
+
+<ul>
+  <li>Authentification via <code>oAuth 2.0</code></li>
+  <li>Reverse proxy identifiant (Openresty, distribution nginx avec support de Lua)
+=&gt; toutes les API “sécurisées” sont protégées par ce reverse proxy</li>
+  <li>Développement de scripts Lua chargés dans la conf nginx permettant de valider le token oAuth</li>
+  <li>Reverse proxy authentifiant également en charge du throttling (exemple : 1000 requêtes/min)</li>
+</ul>
+
+<p><strong>Standard {json:api}</strong></p>
+
+<p>Ce standard est utilisé pour construire une API. Il décrit la manière d’inclure des sous-documents (réduction du nombre de requêtes client/server) et comment limiter les attributs retournés. Il permet donc également la création de requêtes complexes.
+Son implémentation dans Symfony 2 a été effectuée en plusieurs étapes :
+* Surcharge du bundle BazingaHateoasBundle
+* Gestion des inclusions avec l’utilisation d’un serialize.post_serialize
+* Limitation des attributs retournés via la mise en place d’une classe ExclusionStrategy développée par <a href="http://twitter.com/damienalexandre">@damienalexandre</a> de JoliCode</p>
+
+<p><strong>Problèmes rencontrés : solutions</strong></p>
+
+<ul>
+  <li>Performances du JMSSerialize : création d’un bundle permettant de mettre en cache les “visitors”</li>
+  <li>Performances de BazingaHateoasBundle : création d’un bundle permettant de mettre en cache le mécanisme de sérialisation</li>
+</ul>
+
+<p><strong>Evolutions à venir</strong></p>
+
+<ul>
+  <li>Monitoring de l’usage : script Lua pour envoyer  des métriques à StatsD</li>
+  <li>Mise à disposition de <code>SDK</code> pour faciliter l’utilisation de l’<code>API</code> par des partenaires externes (travail en cours : module <code>Drupal</code>)</li>
+  <li>Ouvrir le code du serveur de l’<code>API</code> (en prenant l’exemple de The Guardian)</li>
+  <li>Ouvrir l’API à des dev externes (Open Data ?)</li>
+  <li>Intégration d’une stratégie d’invalidation du cache <code>Varnish</code> (bundle <code>FOSHttpCacheBundle</code>)</li>
+  <li><code>HHVM</code></li>
+</ul>
+
+<h3 id="exemple-de-lexpress-1">4.3 Exemple de Lexpress</h3>
+
+<p>Nicolas Silberman ( <a href="http://twitter.com/nsilberman">@nsilberman</a> ) et Sébastien Angele ( <a href="http://twitter.com/sangele">@sangele</a> ) ont évoqué, lors de leur Talk <em>Industrialisation des environnements de développement avec <code>Puppet</code> et <code>Amazon</code></em>, l’utilisation de l’<code>API</code> d’Amazon. Les critères ayant déterminés leur choix sont :</p>
+
+<ul>
+  <li>La (très bonne) documentation</li>
+  <li>La disponibilité et le temps de réponse</li>
+  <li>Le <code>SDK</code> fourni pour <code>PHP</code> : se base sur <code>Guzzle</code> pour envoyer les requêtes et clients distincts pour chaque service</li>
+  <li>La facile intégration du <code>SDK</code>
+Mais il y a quelques points négatifs tout de même :</li>
+  <li>Beaucoup (trop) de doc à parcourir</li>
+  <li>il est nécessaire de savoir précisément ce que l’on souhaite faire pour ne pas prendre une mauvaise direction.</li>
+</ul>
+
+<p>Une question leur a été posé sur le choix. Pourquoi Amazon et non pas Google ? Leur réponse a été simple : parce que l’offre de Google est moins riche et que Amazon est le leader dans le domaine.</p>
+
+<h3 id="conclusion-1">4.4 Conclusion</h3>
+
+<p>Ce que l’on peut conclure sur l’utilisation d’<code>API</code> est qu’il faut avoir une approche orientée composant, métier et produit. Il faut décentraliser la gouvernance (chaque service est plus ou moins autonome) et les données (coût non négligeable mais atouts importants).
+Il faut également mettre en place une infrastructure automatisée, ce qui devient obligatoire pour ce type d’architecture, sans oublier de gérer les erreurs.
+Ce qui remonte également est qu’il ne faut pas craindre de faire des erreurs. Il ne faut surtout pas commencer un développement en s’estimant trop doué pour créer des bugs. Ce sont les bugs qui permettent d’améliorer son approche des problèmes et leur gestion.</p>
+
+<h2 id="logs">5. Logs</h2>
+
+<p>Les logs permettent de connaître les détails d’une erreur qui survient, mais également de simplement savoir, par exemple, toutes les actions effectuées par un utilisateur. Pour ça il existe plusieurs niveaux de logs qui peuvent être récupérés et décryptés pour simplifier le debug, avoir des statistiques, …
+La première idée qui nous vient à l’esprit pour accéder aux logs est de se connecter au serveur en question en <code>SSH</code>, mais il existe des solutions beaucoup plus lisibles et automatisées pour faire la même chose.
+Nous avons eu le droit à plusieurs exemples d’utilisation des logs en ce premier jour.</p>
+
+<p>Olivier Dolbeau ( <a href="http://twitter.com/odolbeau">@odolbeau</a> ) a présenté la gestion des logs faite chez BlaBlaCar et quelques outils utilisés pour ça.</p>
+
+<h3 id="exemple-de-blablacar">5.1 Exemple de BlaBlaCar</h3>
+
+<p>Chez BlaBlaCar, l’utilisation de la suite EKL associé à Monolog semble bien fonctionner, et il leur l’a prouvé. <code>EKL</code> ? C’est :</p>
+
+<ul>
+  <li><code>ElasticSearch</code></li>
+  <li><code>Kibana</code></li>
+  <li><code>Logstash</code></li>
+</ul>
+
+<p>Cette suite fonctionne de la façon suivante :</p>
+
+<ul>
+  <li><code>Monolog</code> s’occupe d’envoyer les logs à <code>LogStash</code></li>
+  <li><code>Logstash</code> les renvoi dans le backend de stockage <code>ElasticSearch</code></li>
+  <li><code>Kibana</code> interroge <code>ElasticSearch</code> pour récupérer les données et les afficher</li>
+</ul>
+
+<p>Avec cette solution, les développeurs peuvent en quelques clics lister les erreurs, les filtrer, les identifier et, du coup, les corriger rapidement. De fait, ils ne gardent les logs que 15/20 jours, les bugs doivent donc être corrigés dans ce laps de temps.</p>
+
+<p>Outil de visualisation utilisé : <code>Newrelic Dashboard</code>.</p>
+
+<h3 id="exemple-de-klubup-1">5.2 Exemple de KlubUp</h3>
+
+<p>Un autre exemple d’utilisation des logs a été rapidement énoncé lors de la présentation de KlubUp et la mise en place des <code>APIs</code>.
+Les logs sont utilisés pour servir de monitoring/reporting, à l’aide de <code>Logsentries</code> et <code>RequestId</code>.</p>
+
+<p>Pour éviter au maximum les logs d’erreur, il est nécessaire d’effectuer des tests en amont.</p>
+
+<h2 id="applicationsoutils-cits-et-jen-oublie">6. Applications/outils cités (et j’en oublie)</h2>
+
+<ul>
+  <li>Symfony</li>
+  <li>PHPUnit</li>
+  <li>Graphthis</li>
+  <li>MySql</li>
+  <li>MongoDB</li>
+  <li>Sql Server</li>
+  <li>Redis</li>
+  <li>RabbitMQ</li>
+  <li>Instance EC2 chez Amazon</li>
+  <li>Cloud Formation</li>
+  <li>Amazon</li>
+  <li>AWS</li>
+  <li>Puppet</li>
+  <li>Chef</li>
+  <li>Foreman</li>
+  <li>Packer.io</li>
+  <li>Nginx</li>
+  <li>Apache</li>
+  <li>PHP</li>
+  <li>CloudFormation</li>
+  <li>Kitchen</li>
+  <li>PostgreSql</li>
+  <li>ElasticSearch</li>
+  <li>Kibana</li>
+  <li>Logstash</li>
+  <li>Monolog</li>
+  <li>Heka</li>
+  <li>syslog</li>
+  <li>Newrelic Dashboard</li>
+  <li>Diffbot</li>
+  <li>Guzzle</li>
+  <li>C3 (c3.js)</li>
+  <li>D3 (d3.js)</li>
+  <li>HTTP</li>
+  <li>REST</li>
+  <li>JSON</li>
+  <li>oAuth 2</li>
+  <li>Logsentries</li>
+  <li>RequestId</li>
+  <li>NodeJs</li>
+  <li>Iron.io</li>
+  <li>IronMQ</li>
+  <li>IronWorker</li>
+  <li>Varnish</li>
+  <li>OpenVz</li>
+  <li>Docker</li>
+  <li>{json:api}</li>
+  <li>casper-js</li>
+  <li>frisby.js</li>
+  <li>noxlogic/ratelimit-bundle</li>
+  <li>JMSSerializer</li>
+  <li>BazingaHateoarsBundle</li>
+  <li>Drupal</li>
+  <li>Ruby</li>
+  <li>Go</li>
+  <li>Java</li>
+  <li>Vagrant</li>
+  <li>Newrelic</li>
+  <li>Jira</li>
+</ul>
+
+<h2 id="liens-utiles">7. Liens utiles</h2>
+
+<p>Liste des conférences : <a href="http://joind.in/event/view/2091">http://joind.in/event/view/2091</a></p>
+
+<p><strong>A state of mind :</strong>
+<a href="http://github.com/sebastianbergmann/state">http://github.com/sebastianbergmann/state</a>
+<a href="http://thephp.cc/dateshttp://thephp.cc/dates">http://thephp.cc/dates</a>
+<a href="sebastian@thePGP.cc">sebastian@thePGP.cc</a>
+Sebastian Bergmann : <a href="http://twitter.com/@s_bergmann">http://twitter.com/@s_bergmann</a></p>
+
+<p><strong>Industrialisation des environnements de dev avec Puppet et Amazon :</strong>
+Nicolas Silberman : <a href="http://twitter.com/@nsilberman">http://twitter.com/@nsilberman</a>
+Sebastien Angele : <a href="http://twitter.com/@sangele">http://twitter.com/@sangele</a></p>
+
+<p><strong>Laisse pas trainer ton log :</strong>
+Olivier Dolbeau : <a href="http://twitter.com/@odolbeau">http://twitter.com/@odolbeau</a>
+<a href="http://joind.in/11942">http://joind.in/11942</a>
+<a href="http://speakerdeck.com/odolbeau/laisse-pas-trainer-ton-log">http://speakerdeck.com/odolbeau/laisse-pas-trainer-ton-log</a></p>
+
+<p><strong>Automate your workflow : Removing tedium in everyday work :</strong>
+Bruno Skvorc : <a href="http://twitter.com/@bitfalls">http://twitter.com/@bitfalls</a>
+<a href="bruno.skvorc@sitepoint.com">bruno.skvorc@sitepoint.com</a>
+<a href="http://twitter.com/@diffbot">http://twitter.com/@diffbot</a></p>
+
+<p><strong>Architecture d’une application full API orientée micro service :</strong>
+Xavier Gorse : <a href="http://twitter.com/@xgorse">http://twitter.com/@xgorse</a>
+Yves Heitz :</p>
+
+<p><strong>Retour d’expérience ARTE EGIE : développement API :</strong>
+François Dume : <a href="http://twitter.com/@_franek_">http://twitter.com/@<em>franek</em></a>
+<a href="http://joind.in/11962">http://joind.in/11962</a></p>
+
+<p><strong>Résumé de la seconde journée :</strong>
+<a href="http://blog.julienbenoit.net/2014/11/10/forum-php-2014.html">http://blog.julienbenoit.net/2014/11/10/forum-php-2014.html</a> par Julien Benoit ( <a href="http://twitter.com/_JulienBenoit">@_JulienBenoit</a> )</p>
+
+</article>
+
+
+  
+  <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'mickaleuranieblog'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+  <div class="p2 wrap">
+    <div class="measure mt1 center">
+      <small>
+        Crafted with &lt;3 by <a href="http://johnotander.com">John Otander</a> (<a href="https://twitter.com/4lpine">@4lpine</a>).<br>
+        &lt;/&gt; available on <a href="https://github.com/johnotander/pixyll">Github</a>.
+      </small>
+    </div>
+  </div>
+</footer>
+
+
+
+</body>
+</html>
